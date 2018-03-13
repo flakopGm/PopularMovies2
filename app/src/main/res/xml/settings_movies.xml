@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:title="@string/ordenar"
+        android:key="@string/key_orden_settings"
+        android:entries="@array/nombres_visualicion_opciones"
+        android:entryValues="@array/opciones_preferencias"
+        />
+</PreferenceScreen>

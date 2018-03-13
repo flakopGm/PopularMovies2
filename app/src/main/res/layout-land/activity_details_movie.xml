@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearDefault">
+
+    <ScrollView style="@style/ScrollView">
+
+        <RelativeLayout style="@style/RelativeInfoMovie">
+
+            <ImageView
+                android:id="@+id/poster"
+                style="@style/PosterLand" />
+
+            <LinearLayout
+                android:id="@+id/details_secun"
+                style="@style/LinearDetailsLand">
+
+                <TextView style="@style/TextoFechaLanzamientoLand" />
+
+                <TextView
+                    android:id="@+id/fecha_lanza"
+                    style="@style/FechaMovieLand" />
+
+                <TextView
+                    android:id="@+id/texto_idioma_original"
+                    style="@style/TextoIdiomaOriginalLand" />
+
+                <ImageView
+                    android:id="@+id/bandera"
+                    style="@style/BanderasLand" />
+
+                <TextView
+                    android:id="@+id/idioma_original"
+                    style="@style/TextoBanderaLand" />
+
+                <TextView style="@style/TextoValoracionLand" />
+
+                <RatingBar
+                    android:id="@+id/vote_average"
+                    style="@style/RatingBarLand" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearDefault"
+                android:layout_toRightOf="@id/poster">
+
+                <TextView
+                    android:id="@+id/texto_title_original"
+                    style="@style/TextoTituloMovieLand" />
+
+                <TextView
+                    android:id="@+id/original_title"
+                    style="@style/OriginalTitleLand" />
+
+                <TextView
+                    android:id="@+id/texto_sipnosis"
+                    style="@style/TextoSipnosisLand" />
+
+                <TextView
+                    android:id="@+id/sipnosis"
+                    style="@style/sipnosisLand" />
+            </LinearLayout>
+
+            <View
+                style="@style/Views"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

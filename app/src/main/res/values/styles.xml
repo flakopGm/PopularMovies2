@@ -1,0 +1,347 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+
+    <!-- Estilo Linear similares. -->
+    <style name="LinearDefault">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Estilo para el gridView. -->
+    <style name="Gridview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <!-- Estilos para la info sin conexión. -->
+    <style name="TextoNoConexion">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Light.SearchResult.Title</item>
+        <item name="android:padding">@dimen/DefaultSeparation</item>
+        <item name="android:text">@string/toast</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:contentDescription">@string/textoInformativo</item>
+    </style>
+
+    <style name="ImagenNoConexion">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@drawable/sinconexion</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:contentDescription">@string/ImagenInformativa</item>
+    </style>
+
+    <!-- Estilos para la actividad de detalle de película en el modo portrait. -->
+    <style name="PosterDetails">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/MinDimen</item>
+        <item name="android:layout_weight">@integer/WeightPoster</item>
+        <item name="android:contentDescription">@string/contentDescriptionPoster</item>
+    </style>
+
+    <style name="Views">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/HeightView</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="ScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/MinDimen</item>
+        <item name="android:layout_weight">2.5</item>
+        <item name="android:scrollbarStyle">insideOverlay</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="RelativeInfoMovie">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LinearDetallesMovie1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="TextoFecha">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/texto_fecha</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:paddingRight">@dimen/DefaultSeparation</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop10</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FechaMovie">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">@dimen/DefaultSeparation</item>
+        <item name="android:textColor">@color/textoDetails</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:contentDescription">@string/ContentFechaLanzamiento</item>
+    </style>
+
+    <style name="TextoValoración">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:text">@string/texto_valoracion</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop10</item>
+        <item name="android:paddingRight">@dimen/DefaultSeparation</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RatingBar" parent="Base.Widget.AppCompat.RatingBar.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_marginRight">@dimen/DefaultSeparation</item>
+        <item name="android:numStars">@integer/NumStart</item>
+        <item name="android:rating">3</item>
+        <item name="android:stepSize">0.5</item>
+        <item name="android:contentDescription">@string/ContentRating</item>
+    </style>
+
+    <style name="TextoTituloMovie">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/texto_titulo_original</item>
+        <item name="android:paddingLeft">@dimen/DefaultSeparation</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:layout_below">@id/details_secun</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="OriginalTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/DefaultSeparation</item>
+        <item name="android:paddingRight">@dimen/DefaultSeparation</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/textoDetails</item>
+        <item name="android:layout_below">@id/texto_title_original</item>
+        <item name="android:contentDescription">@string/ContentOriginalTitle</item>
+    </style>
+    
+    <style name="TextoIdiomaOriginal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/idioma_original</item>
+        <item name="android:paddingLeft">@dimen/DefaultSeparation</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop10</item>
+        <item name="android:layout_below">@id/original_title</item>
+    </style>
+    
+    <style name="Banderas">
+        <item name="android:layout_width">@dimen/AnchoBandera</item>
+        <item name="android:layout_height">@dimen/AltoBandera</item>
+        <item name="android:layout_marginLeft">@dimen/DefaultSeparation</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop5</item>
+        <item name="android:padding">@dimen/MarginTop5</item>
+        <item name="android:layout_below">@id/texto_idioma_original</item>
+        <item name="android:contentDescription">@string/ContentBanderas</item>
+    </style>
+
+    <style name="TextoBandera">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/DefaultSeparation</item>
+        <item name="android:textColor">@color/textoDetails</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_below">@id/bandera</item>
+    </style>
+    
+    <style name="TextoSipnosis">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:text">@string/texto_sipnosis</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_below">@id/idioma_original</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:layout_marginBottom">@dimen/MarginBottom12</item>
+    </style>
+
+    <style name="sipnosis">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textoDetails</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_marginLeft">@dimen/DefaultSeparation</item>
+        <item name="android:layout_marginRight">@dimen/DefaultSeparation</item>
+        <item name="android:layout_marginBottom">@dimen/MarginBottom20</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:layout_below">@id/texto_sipnosis</item>
+        <item name="android:contentDescription">@string/ContentSipnosis</item>
+    </style>
+
+    <!-- Estilos para la pantalla de dellate de película en el modo Landscape. -->
+    <style name="PosterLand">
+        <item name="android:layout_width">@dimen/PosterLandWidth</item>
+        <item name="android:layout_height">@dimen/PosterLandHeigth</item>
+        <item name="android:layout_marginLeft">@dimen/DefaultSeparation</item>
+        <item name="android:layout_marginRight">@dimen/DefaultSeparation</item>
+        <item name="android:layout_marginTop">@dimen/DefaultSeparation</item>
+        <item name="android:contentDescription">@string/contentDescriptionPoster</item>
+    </style>
+
+    <style name="LinearDetailsLand">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_below">@id/poster</item>
+        <item name="android:layout_marginTop">@dimen/DefaultSeparation</item>
+    </style>
+
+    <style name="TextoFechaLanzamientoLand">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/texto_fecha</item>
+        <item name="android:paddingRight">@dimen/DefaultSeparation</item>
+        <item name="android:paddingLeft">@dimen/DefaultSeparation</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FechaMovieLand">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">@dimen/DefaultSeparation</item>
+        <item name="android:paddingLeft">@dimen/DefaultSeparation</item>
+        <item name="android:textColor">@color/textoDetails</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="TextoIdiomaOriginalLand">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/idioma_original</item>
+        <item name="android:paddingLeft">@dimen/DefaultSeparation</item>
+        <item name="android:paddingRight">@dimen/DefaultSeparation</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop10</item>
+        <item name="android:layout_below">@id/vote_average</item>
+    </style>
+
+    <style name="BanderasLand">
+        <item name="android:layout_width">@dimen/AnchoBandera</item>
+        <item name="android:layout_height">@dimen/AltoBandera</item>
+        <item name="android:layout_marginLeft">@dimen/DefaultSeparation</item>
+        <item name="android:layout_marginRight">@dimen/DefaultSeparation</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop5</item>
+        <item name="android:padding">@dimen/MarginTop5</item>
+        <item name="android:layout_below">@id/texto_idioma_original</item>
+    </style>
+
+    <style name="TextoBanderaLand">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/DefaultSeparation</item>
+        <item name="android:layout_marginRight">@dimen/DefaultSeparation</item>
+        <item name="android:textColor">@color/textoDetails</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_below">@id/bandera</item>
+    </style>
+
+    <style name="TextoValoracionLand">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:paddingRight">@dimen/DefaultSeparation</item>
+        <item name="android:paddingLeft">@dimen/DefaultSeparation</item>
+        <item name="android:text">@string/texto_valoracion</item>
+        <item name="android:layout_marginTop">@dimen/MarginTop10</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RatingBarLand" parent="Base.Widget.AppCompat.RatingBar.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/DefaultSeparation</item>
+        <item name="android:layout_marginLeft">@dimen/DefaultSeparation</item>
+        <item name="android:layout_marginBottom">@dimen/MarginTop10</item>
+        <item name="android:numStars">@integer/NumStart</item>
+        <item name="android:rating">3</item>
+        <item name="android:stepSize">0.5</item>
+    </style>
+
+    <style name="TextoTituloMovieLand">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/texto_titulo_original</item>
+        <item name="android:paddingLeft">@dimen/DefaultSeparation</item>
+        <item name="android:paddingTop">@dimen/DefaultSeparation</item>
+        <item name="android:layout_toRightOf">@id/poster</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="OriginalTitleLand">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/DefaultSeparation</item>
+        <item name="android:layout_marginRight">@dimen/DefaultSeparation</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Light.SearchResult.Title</item>
+        <item name="android:textColor">@color/textoDetails</item>
+        <item name="android:layout_toRightOf">@id/poster</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_below">@id/texto_title_original</item>
+    </style>
+
+    <style name="TextoSipnosisLand">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:text">@string/texto_sipnosis</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">@dimen/DefaultSeparation</item>
+        <item name="android:layout_marginLeft">@dimen/DefaultSeparation</item>
+        <item name="android:layout_below">@id/original_title</item>
+        <item name="android:layout_toRightOf">@id/poster</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Headline</item>
+        <item name="android:layout_marginBottom">@dimen/MarginBottom12</item>
+    </style>
+
+    <style name="sipnosisLand">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textoDetails</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_marginLeft">@dimen/DefaultSeparation</item>
+        <item name="android:layout_marginRight">@dimen/DefaultSeparation</item>
+        <item name="android:layout_marginBottom">@dimen/MarginBottom20</item>
+        <item name="android:layout_toRightOf">@id/poster</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:layout_below">@id/texto_sipnosis</item>
+    </style>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Popular Movies "</string>
+    <string name="toast">CHECK YOUR INTERNET CONNECTION</string>
+    <string name="key_orden_settings">Display order</string>
+    <string name="popular">Most popular</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="texto_fecha">Release date</string>
+    <string name="texto_valoracion">User Rating</string>
+    <string name="texto_titulo_original">Origial Title</string>
+    <string name="idioma_original">Original Language</string>
+    <string name="texto_sipnosis">Synosis</string>
+    <string name="contentDescriptionPoster">Image with the cover of the selected movie</string>
+    <string name="nombre_menu">Display settings</string>
+    <string name="ordenar">Sort by</string>
+    <string name="ajustes">Settings</string>
+    <string name="ocurrioError">Ups! an error occurred, try again</string>
+    <string name="textoInformativo">Informative text without network connection.</string>
+    <string name="ImagenInformativa">Image warning without network connection.</string>
+    <string name="ContentFechaLanzamiento">Release date of the movie.</string>
+    <string name="ContentRating">Rating range of the movie.</string>
+    <string name="ContentOriginalTitle">Original title of the film.</string>
+    <string name="ContentBanderas">Flag of the country according to the original language of the film.</string>
+    <string name="ContentSipnosis">Synopsis of the film.</string>
+</resources>

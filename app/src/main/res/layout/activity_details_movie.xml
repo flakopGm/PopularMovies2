@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearDefault">
+
+    <ImageView
+        android:id="@+id/poster"
+        style="@style/PosterDetails" />
+
+    <View
+        android:id="@+id/view_image"
+        style="@style/Views" />
+
+    <ScrollView
+        style="@style/ScrollView">
+
+        <RelativeLayout style="@style/RelativeInfoMovie">
+
+            <LinearLayout
+                android:id="@+id/details_secun"
+                style="@style/LinearDetallesMovie1">
+
+                <TextView style="@style/TextoFecha" />
+
+                <TextView
+                    android:id="@+id/fecha_lanza"
+                    style="@style/FechaMovie" />
+
+                <TextView style="@style/TextoValoración" />
+
+                <RatingBar
+                    android:id="@+id/vote_average"
+                    style="@style/RatingBar" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/texto_title_original"
+                style="@style/TextoTituloMovie" />
+
+            <TextView
+                android:id="@+id/original_title"
+                style="@style/OriginalTitle" />
+
+            <TextView
+                android:id="@+id/texto_idioma_original"
+                style="@style/TextoIdiomaOriginal" />
+
+            <ImageView
+                android:id="@+id/bandera"
+                style="@style/Banderas" />
+
+            <TextView
+                android:id="@+id/idioma_original"
+                style="@style/TextoBandera" />
+
+            <TextView
+                android:id="@+id/texto_sipnosis"
+                style="@style/TextoSipnosis" />
+
+            <TextView
+                android:id="@+id/sipnosis"
+                style="@style/sipnosis" />
+
+            <View
+                style="@style/Views"
+                android:layout_below="@id/sipnosis" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

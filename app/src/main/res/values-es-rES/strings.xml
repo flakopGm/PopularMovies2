@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Popular Movies "</string>
+    <string name="toast">COMPRUEBE SU CONEXIÓN A INTERNET</string>
+    <string name="key_orden_settings">Orden de visualización</string>
+    <string name="popular">Las más Populares</string>
+    <string name="top_rated">Las más Valoradas</string>
+    <string name="texto_fecha">Fecha de lanzamiento</string>
+    <string name="texto_valoracion">Valoración de usuarios</string>
+    <string name="texto_titulo_original">Título Original</string>
+    <string name="idioma_original">Idioma Original</string>
+    <string name="texto_sipnosis">Sipnosis</string>
+    <string name="contentDescriptionPoster">Imagen con la portada de la película seleccionada</string>
+    <string name="nombre_menu">Ajustes de visualización</string>
+    <string name="ordenar">Ordenar por</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="ocurrioError">Ups! ocurrió un error, inténtelo de nuevo</string>
+    <string name="textoInformativo">Texto informativo sin conexión de red.</string>
+    <string name="ImagenInformativa">Imagen aviso sin conexión de red.</string>
+    <string name="ContentFechaLanzamiento">Fecha de lanzamiento de la película.</string>
+    <string name="ContentRating">Rango de valoración de la película.</string>
+    <string name="ContentOriginalTitle">Título original de la película.</string>
+    <string name="ContentBanderas">Bandera del país según el idioma original de la película.</string>
+    <string name="ContentSipnosis">Sipnosis de la película.</string>
+</resources>
