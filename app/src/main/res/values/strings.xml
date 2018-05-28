@@ -1,29 +1,61 @@
 <resources>
     <string name="app_name">Popular Movies </string>
     <string name="toast">COMPRUEBE SU CONEXIÓN A INTERNET</string>
-    <string name="key_orden_settings">Orden de visualización</string>
+    <string name="key_orden_settings">orden_visualizacion</string>
 
     <!-- Valores para el órden de las películas según el usuario. -->
     <string name="order_popular" translatable="false">popular</string>
     <string name="order_top_rated" translatable="false">top_rated</string>
+    <string name="favorites" translatable="false">favorites</string>
     <!-- Textos para la selección del órden. -->
-    <string name="popular">Las más Populares</string>
-    <string name="top_rated">Las más Valoradas</string>
+    <string name="popular">Populares</string>
+    <string name="top_rated">Más Valoradas</string>
+    <string name="favoritos">Mis Favoritos</string>
     <string name="texto_fecha">Fecha de lanzamiento</string>
     <string name="texto_valoracion">Valoración de usuarios</string>
     <string name="texto_titulo_original">Título Original</string>
     <string name="idioma_original">Idioma Original</string>
-    <string name="texto_sipnosis">Sipnosis</string>
+    <string name="texto_sipnosis">SINOPSIS</string>
     <string name="contentDescriptionPoster">Imagen con la portada de la película seleccionada</string>
     <string name="nombre_menu">Ajustes de visualización</string>
     <string name="ordenar">Ordenar por</string>
     <string name="ajustes">Ajustes</string>
     <string name="ocurrioError">Ups! ocurrió un error, inténtelo de nuevo.</string>
     <string name="textoInformativo">Texto informativo sin conexión de red.</string>
-    <string name="ImagenInformativa">Imagen aviso sin conexión de red.</string>
-    <string name="ContentFechaLanzamiento">Fecha de lanzamiento de la película.</string>
-    <string name="ContentRating">Rango de valoración de la película.</string>
-    <string name="ContentOriginalTitle">Título original de la película.</string>
-    <string name="ContentBanderas">Bandera del país según el idioma original de la película.</string>
-    <string name="ContentSipnosis">Sipnosis de la película.</string>
+    <string name="imagenInformativa">Imagen aviso sin conexión de red.</string>
+    <string name="contentFechaLanzamiento">Fecha de lanzamiento de la película.</string>
+    <string name="contentRating">Rango de valoración de la película.</string>
+    <string name="contentOriginalTitle">Título original de la película.</string>
+    <string name="contentBanderas">Bandera del país según el idioma original de la película.</string>
+    <string name="contentSipnosis">Sipnosis de la película.</string>
+    <string name="no_data">Sin registro</string>
+    <string name="faltaKeyApi">Falta la key de la API</string>
+    <string name="title_activity_main2" translatable="false">Main2Activity</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_notifications" translatable="false">Notifications</string>
+    <string name="texto_1_empty_view">Para añadir películas a su lista de favoritos, seleccione el icono</string>
+    <string name="isnav_favoritos" translatable="false">NavFavorito</string>
+    <string name="ok">OK!</string>
+    <string name="eliminado">Eliminado de Favoritos</string>
+    <string name="compartir_peli">Compartir Película</string>
+    <string name="intent_share">Oye has visto esta película, está genial, te la recomiendo: </string>
+    <string name="emptyview_fav">Para eliminar favoritos deslice la película a eliminar a la derecha o izquierda  (o puede desmarcar el icono)</string>
+    <string name="intent_current_movie" translatable="false">movieSelect</string>
+    <string name="google_search" translatable="false">https://www.google.es/search?q=</string>
+    <string name="youtube_search" translatable="false">https://www.youtube.com/results?search_query=</string>
+    <string name="promo" translatable="false">Popular Movie App :)</string>
+    <string name="nada_por_ahora">NADA POR EL MOMENTO</string>
+    <string name="youTube" translatable="false">YouTube</string>
+    <string name="youtube_" translatable="false">youtube</string>
+    <string name="incluidoFav">HAS AÑADIDO %s a favoritos</string>
+    <string name="eliminadoFav">Has eliminado %s de Favoritos</string>
+    <string name="logDelete" translatable="false">DetailsActivity-DELETE</string>
+    <string name="contentbandera">Imagen de la bandera del pais de origen</string>
+    <string name="texto_trailers">TRAILERS</string>
+    <string name="text_review">CRÍTICAS Y VALORACIÓN</string>
+    <string name="more_info">MÁS INFO</string>
+    <string name="moviecurrent">movieSelect</string>
+    <string name="instrucciones">PARA VER MÁS TRAILER O REVIEW PUEDE DESLIZARLOS A LA DERECHA O IZQUIERDA</string>
+
 </resources>

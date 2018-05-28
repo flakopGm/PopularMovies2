@@ -7,7 +7,7 @@
     <string name="top_rated">Top Rated</string>
     <string name="texto_fecha">Release date</string>
     <string name="texto_valoracion">User Rating</string>
-    <string name="texto_titulo_original">Origial Title</string>
+    <string name="texto_titulo_original">Original Title</string>
     <string name="idioma_original">Original Language</string>
     <string name="texto_sipnosis">Synosis</string>
     <string name="contentDescriptionPoster">Image with the cover of the selected movie</string>
@@ -16,10 +16,31 @@
     <string name="ajustes">Settings</string>
     <string name="ocurrioError">Ups! an error occurred, try again</string>
     <string name="textoInformativo">Informative text without network connection.</string>
-    <string name="ImagenInformativa">Image warning without network connection.</string>
-    <string name="ContentFechaLanzamiento">Release date of the movie.</string>
-    <string name="ContentRating">Rating range of the movie.</string>
-    <string name="ContentOriginalTitle">Original title of the film.</string>
-    <string name="ContentBanderas">Flag of the country according to the original language of the film.</string>
-    <string name="ContentSipnosis">Synopsis of the film.</string>
+    <string name="imagenInformativa">Image warning without network connection.</string>
+    <string name="contentFechaLanzamiento">Release date of the movie.</string>
+    <string name="contentRating">Rating range of the movie.</string>
+    <string name="contentOriginalTitle">Original title of the film.</string>
+    <string name="contentBanderas">Flag of the country according to the original language of the film.</string>
+    <string name="contentSipnosis">Synopsis of the film.</string>
+    <string name="no_data">Without registration</string>
+    <string name="faltaKeyApi">The API key is missing</string>
+    <string name="contentbandera">Image of the flag of the country of origin</string>
+    <string name="ok">OK!</string>
+    <string name="google_search">https://www.google.es/search?q=</string>
+    <string name="youtube_search">https://www.youtube.com/results?search_query=</string>
+    <string name="youTube">YouTube</string>
+    <string name="youtube_">youtube</string>
+    <string name="moviecurrent">movieSelect</string>
+    <string name="favoritos">My favourites</string>
+    <string name="more_info">MORE INFO</string>
+    <string name="texto_1_empty_view">To add movies to your favorites list, select the icon</string>
+    <string name="eliminado">Removed from Favorites</string>
+    <string name="compartir_peli">Share Movie</string>
+    <string name="intent_share">Hey, you\'ve seen this movie, it\'s great, I recommend it to you:</string>
+    <string name="emptyview_fav">To remove favorites slide the movie to be deleted to the right or left (or you can unmark the icon)</string>
+    <string name="nada_por_ahora">NOTHING AT THE MOMENT</string>
+    <string name="incluidoFav">YOU ADDED %s to favorites</string>
+    <string name="eliminadoFav">You have removed %s from Favorites</string>
+    <string name="text_review">CRITICS AND ASSESSMENT</string>
+    <string name="instrucciones">TO SEE MORE TRAILER OR COMMENTS YOU CAN SLIDE THEM RIGHT OR LEFT</string>
 </resources>

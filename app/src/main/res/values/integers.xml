@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Recursos integer para el resize de imagen, ancho y algo. -->
-    <integer name="TargetWidth">720</integer>
-    <integer name="TargetHeight">1000</integer>
+    <integer name="TargetWidth">873</integer>
+    <integer name="TargetHeight">600</integer>
 
-    <integer name="WeightPoster">2</integer>
     <integer name="NumStart">5</integer>
+    <integer name="Mini">0</integer>
+    <integer name="ColumnsLand">4</integer>
+    <integer name="TagViewHolder">15</integer>
+    <integer name="MaxChar">100</integer>
+    <integer name="Hd">1080</integer>
+    <integer name="WeigthSum">7</integer>
 </resources>

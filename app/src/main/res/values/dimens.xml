@@ -3,12 +3,32 @@
     <dimen name="DefaultSeparation">16dp</dimen>
     <dimen name="MinDimen">0dp</dimen>
     <dimen name="HeightView">3dp</dimen>
-    <dimen name="MarginTop5">5dp</dimen>
-    <dimen name="MarginTop10">10dp</dimen>
+    <dimen name="Margin5">5dp</dimen>
+    <dimen name="Margin10">10dp</dimen>
     <dimen name="AnchoBandera">35dp</dimen>
-    <dimen name="AltoBandera">25dp</dimen>
-    <dimen name="MarginBottom12">12dp</dimen>
-    <dimen name="MarginBottom20">20dp</dimen>
+    <dimen name="AltoBandera">20dp</dimen>
+    <dimen name="Margin22">22dp</dimen>
+    <dimen name="Margin12">12dp</dimen>
+    <dimen name="Margin20">20dp</dimen>
     <dimen name="PosterLandWidth">150dp</dimen>
     <dimen name="PosterLandHeigth">115dp</dimen>
+    <dimen name="IconoLike">70dp</dimen>
+    <dimen name="Margin45">45dp</dimen>
+    <dimen name="Dimen40">40dp</dimen>
+    <dimen name="minHeight">80dp</dimen>
+    <dimen name="widthPosterD">180dp</dimen>
+    <dimen name="heightPosterD">150dp</dimen>
+    <dimen name="BottomRecycler">54dp</dimen>
+    <dimen name="EmptyViewSeparation">50dp</dimen>
+    <dimen name="Quince">15dp</dimen>
+    <dimen name="sesenta">60dp</dimen>
+    <dimen name="treinta">30dp</dimen>
+    <dimen name="cien">100dp</dimen>
+    <dimen name="veinti">25dp</dimen>
+
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
 </resources>

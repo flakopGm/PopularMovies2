@@ -3,7 +3,12 @@
     <color name="colorPrimary">#00796B</color>
     <color name="colorPrimaryDark">#004D40</color>
     <color name="colorAccent">#1DE9B6</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="semi">#E0F2F1</color>
+    <color name="themeTrans">#8000796B</color>
+    <color name="botonNavigationResaltado">#90A4AE</color>
+    <color name="negro">#000000</color>
+    <color name="gris">#E0E0E0</color>
+    <color name="gris_oscuro">#BDBDBD</color>
 
-    <!-- Color para la información al detalle. -->
-    <color name="textoDetails">#00796B</color>
 </resources>

@@ -1,19 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
     android:id="@+id/linear_gridview"
     style="@style/LinearDefault">
-<!--
-    <GridView
-        android:id="@+id/gridview"
-        style="@style/Gridview"
-        android:numColumns="4"></GridView> -->
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:id="@+id/recycler_movies"
+        style="@style/RecyclerMain"
+        android:visibility="visible"></android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_favoritos"
+        style="@style/RecyclerMain"
+        android:visibility="gone">
 
     </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/linear_emptyview"
+        style="@style/LinearEmptyView"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/empty_view_favoritos"
+            style="@style/TextoEmptyViewLand"
+            android:text="@string/texto_1_empty_view" />
+
+        <LinearLayout style="@style/LinearEmpty_">
+
+            <ImageView
+                android:id="@+id/icono_empty"
+                style="@style/IconosInfo"
+                android:src="@drawable/ic_favorite_movie_border_" />
+
+            <ImageView
+                android:id="@+id/flecha"
+                style="@style/IconosInfo"
+                android:src="@drawable/ic_arrow_right36dp" />
+
+            <ImageView
+                android:id="@+id/icono_empty1"
+                style="@style/IconosInfo"
+                android:src="@drawable/ic_favorite_movie" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/empty_view_favoritos1"
+            style="@style/TextoEmptyViewLand"
+            android:text="Para eliminar favoritos deslice su casilla a la derecha o izquierda o desmarque el icono" />
+
+        <RelativeLayout style="@style/RelativeInfoMovieIconos">
+
+            <ImageView
+                android:id="@+id/eliminar_fav"
+                style="@style/IconosInfo"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/Margin20"
+                android:layout_marginRight="@dimen/Margin20"
+                android:src="@drawable/ic_arrow_left24dp" />
+
+            <ImageView
+                android:id="@+id/flecha1"
+                style="@style/IconosInfo"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/Margin20"
+                android:layout_marginRight="@dimen/Margin20"
+
+                android:src="@drawable/ic_arrow_right36dp" />
+        </RelativeLayout>
+    </LinearLayout>
 
     <!-- Texto aviso sin conexión. -->
     <TextView
@@ -23,6 +80,16 @@
     <!-- Imagen indicadora dispositivo sin conexión. -->
     <ImageView
         android:id="@+id/noconecttion"
-        style="@style/ImagenNoConexion"></ImageView>
+        style="@style/ImagenNoConexion" />
 
-</LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation_view"
+        style="@style/BottomNav"
+        app:itemIconTint="@color/estados_navigation"
+        app:itemTextColor="@color/estados_navigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        design:menu="@menu/orden_menu">
+
+    </android.support.design.widget.BottomNavigationView>
+
+</android.support.constraint.ConstraintLayout>

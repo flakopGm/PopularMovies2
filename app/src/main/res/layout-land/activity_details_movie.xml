@@ -1,69 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/LinearDefault">
 
-    <ScrollView style="@style/ScrollView">
+    <View
+        android:id="@+id/view_image"
+        style="@style/Views"
+        app:layout_constraintTop_toBottomOf="@id/poster" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        style="@style/scrollView"
+        app:layout_constraintTop_toBottomOf="@id/view_image">
 
         <RelativeLayout style="@style/RelativeInfoMovie">
 
-            <ImageView
-                android:id="@+id/poster"
-                style="@style/PosterLand" />
-
             <LinearLayout
-                android:id="@+id/details_secun"
-                style="@style/LinearDetailsLand">
+                android:id="@+id/linear_superior_detail_land"
+                style="@style/LinearCabeceraDetails">
 
-                <TextView style="@style/TextoFechaLanzamientoLand" />
+                <android.support.v7.widget.CardView
+                    style="@style/CardViewDetails"
+                    android:layout_margin="@dimen/Margin10"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="25dp"
+                    app:cardMaxElevation="50dp"
+                    app:cardPreventCornerOverlap="true">
 
-                <TextView
-                    android:id="@+id/fecha_lanza"
-                    style="@style/FechaMovieLand" />
+                    <ImageView
+                        android:id="@+id/poster"
+                        style="@style/PosterDetailsLand"
+                        />
+                </android.support.v7.widget.CardView>
 
-                <TextView
-                    android:id="@+id/texto_idioma_original"
-                    style="@style/TextoIdiomaOriginalLand" />
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardview_details"
+                    style="@style/CardViewDetails"
+                    android:layout_margin="@dimen/Margin10"
+                    app:cardBackgroundColor="@color/blanco"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="25dp"
+                    app:cardMaxElevation="50dp"
+                    app:cardPreventCornerOverlap="true">
 
-                <ImageView
-                    android:id="@+id/bandera"
-                    style="@style/BanderasLand" />
+                    <RelativeLayout style="@style/RelativeSencillo">
 
-                <TextView
-                    android:id="@+id/idioma_original"
-                    style="@style/TextoBanderaLand" />
+                        <ImageView
+                            android:id="@+id/icono_like"
+                            style="@style/IconoLike" />
 
-                <TextView style="@style/TextoValoracionLand" />
+                        <TextView
+                            android:id="@+id/texto_fechalanzamiendo"
+                            style="@style/TextoFecha" />
 
-                <RatingBar
-                    android:id="@+id/vote_average"
-                    style="@style/RatingBarLand" />
+                        <TextView
+                            android:id="@+id/fecha_lanza"
+                            style="@style/FechaMovie" />
+
+                        <TextView
+                            android:id="@+id/texto_valoracion"
+                            style="@style/TextoValoración" />
+
+                        <RatingBar
+                            android:id="@+id/vote_average"
+                            style="@style/RatingBar" />
+
+                        <TextView
+                            android:id="@+id/texto_title_original"
+                            style="@style/TextoTituloMovie" />
+
+                        <TextView
+                            android:id="@+id/original_title"
+                            style="@style/OriginalTitle" />
+
+                        <TextView
+                            android:id="@+id/texto_idioma_original"
+                            style="@style/TextoIdiomaOriginal" />
+
+                        <ImageView
+                            android:id="@+id/bandera"
+                            style="@style/Banderas" />
+
+                        <TextView
+                            android:id="@+id/idioma_original"
+                            style="@style/TextoBandera" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
             </LinearLayout>
 
             <LinearLayout
-                style="@style/LinearDefault"
-                android:layout_toRightOf="@id/poster">
+                android:id="@+id/soporte_cardviews"
+                style="@style/LinearSimil"
+                android:layout_below="@id/linear_superior_detail_land">
 
-                <TextView
-                    android:id="@+id/texto_title_original"
-                    style="@style/TextoTituloMovieLand" />
+                <View
+                    style="@style/ViewCorto"
+                    android:layout_marginTop="@dimen/Margin10" />
 
-                <TextView
-                    android:id="@+id/original_title"
-                    style="@style/OriginalTitleLand" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_left36dp"/>
+
+                    <TextView
+                        android:id="@+id/texto_trailers"
+                        style="@style/TextoTrailers"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="2"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_right36dp"/>
+                </LinearLayout>
+
+
+                <android.support.v7.widget.CardView
+                    style="@style/CardviewSimil"
+                    app:cardElevation="25dp"
+                    app:cardMaxElevation="50dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_trailers"
+                        style="@style/Recyclers">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </android.support.v7.widget.CardView>
+
+                <View
+                    style="@style/ViewCorto"
+                    android:layout_marginTop="@dimen/Margin10" />
 
                 <TextView
                     android:id="@+id/texto_sipnosis"
-                    style="@style/TextoSipnosisLand" />
+                    style="@style/TextoSipnosis" />
 
-                <TextView
-                    android:id="@+id/sipnosis"
-                    style="@style/sipnosisLand" />
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardview_sipnosis"
+                    style="@style/CardviewSimil"
+                    android:layout_marginBottom="@dimen/Margin10"
+                    android:layout_marginTop="@dimen/Margin5"
+                    app:cardBackgroundColor="@color/blanco"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="25dp"
+                    app:cardMaxElevation="50dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <TextView
+                        android:id="@+id/sipnosis"
+                        style="@style/sipnosis" />
+                </android.support.v7.widget.CardView>
+
+                <View
+                    style="@style/ViewCorto"
+                    android:layout_marginBottom="0dp" />
+
+                <LinearLayout
+                    style="@style/Flechas"
+                    android:orientation="horizontal">
+
+                    <ImageView style="@style/Flechas"
+                        android:src="@drawable/ic_arrow_left36dp"/>
+
+                    <TextView
+                        style="@style/TextoReviews"
+                        android:layout_marginTop="@dimen/Margin10"
+                        android:layout_weight="2"/>
+
+                    <ImageView
+                        style="@style/Flechas"
+                        android:src="@drawable/ic_arrow_right36dp"/>
+                </LinearLayout>
+
+
+
+                <android.support.v7.widget.CardView
+                    style="@style/CardviewSimil"
+                    android:layout_marginBottom="@dimen/Margin10"
+                    android:layout_marginTop="@dimen/Margin10"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardElevation="25dp"
+                    app:cardMaxElevation="50dp"
+                    app:cardPreventCornerOverlap="true">
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_reviews"
+                        style="@style/Recyclers"
+                        android:layout_marginBottom="@dimen/Margin10"
+                        android:layout_marginTop="@dimen/Margin10">
+
+                    </android.support.v7.widget.RecyclerView>
+                </android.support.v7.widget.CardView>
+
+                <View
+                    style="@style/ViewCorto"
+                    android:layout_marginTop="@dimen/Margin10" />
+
             </LinearLayout>
-
-            <View
-                style="@style/Views"
-                android:layout_alignParentBottom="true" />
-
         </RelativeLayout>
     </ScrollView>
 </LinearLayout>
