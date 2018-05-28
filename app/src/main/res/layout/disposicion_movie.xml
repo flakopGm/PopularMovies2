@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/portada_movie"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/aleman" />
+        <RatingBar
+            android:id="@+id/rating_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.RatingBar.Small"
+            android:rating="2"
+            android:numStars="@integer/NumStart"
+            android:stepSize="0.5"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/Margin10"/>
+
+</FrameLayout>

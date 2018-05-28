@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearDefault">
+
+    <RelativeLayout
+        android:id="@+id/relative_fav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/contraportada"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            tools:src="@drawable/sinconexion9patch" />
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="45dp"
+            card_view:cardBackgroundColor="@color/colorPrimaryDark"
+            card_view:cardCornerRadius="80dp"
+            card_view:cardElevation="5dp">
+
+            <ImageView
+                android:id="@+id/portada_movie_fav"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                tools:src="@drawable/aleman" />
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/titulo_favorito"
+            style="@style/LinearFavoritos"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            tools:text="HOLA DON PE" />
+
+        <LinearLayout
+            android:id="@+id/botones_fav"
+            style="@style/LinearFavoritos"
+            android:layout_toRightOf="@id/card_view"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/Margin10">
+
+            <Button
+                android:id="@+id/boton_ficha"
+                style="@style/BotonesFavLand"
+                android:drawableTop="@drawable/ic_description"
+                android:text="FICHA" />
+
+            <Button
+                android:id="@+id/mas_info"
+                style="@style/BotonesFavLand"
+                android:drawableTop="@drawable/ic_info"
+                android:text="INFO" />
+
+            <Button
+                android:id="@+id/compartir"
+                style="@style/BotonesFavLand"
+                android:drawableTop="@drawable/ic_share_white_24dp"
+                android:text="COMPARTIR" />
+
+        </LinearLayout>
+
+        <View style="@style/ViewFinalFav"/>
+
+    </RelativeLayout>
+</LinearLayout>

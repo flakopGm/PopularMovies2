@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativeInfoMovie">
+
+    <View style="@style/ViewTrailer" />
+
+    <View
+        style="@style/ViewTrailer"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/portada_trailer"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:id="@+id/nombre_trailer"
+        style="@style/NombreTrailer" />
+
+    <LinearLayout
+        style="@style/LinearTrailer"
+        android:weightSum="7">
+
+        <ImageView
+            android:id="@+id/idioma_trailer"
+            style="@style/IndicadoresTrailer"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/site_trailer"
+            style="@style/IndicadoresTrailer"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/size_trailer"
+            style="@style/IndicadoresTrailer"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>
